@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!--Background graphics courtesy of vecteezy.com-->
+<head>
+	<title>Mucci Men Inc.</title>
+	<link rel="stylesheet" type="text/css" href="project-landing.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<nav id="nav-bar" class="nav-down">
+			<img id="header-img" src="mucci.png" alt="Mucci Men Logo">
+			<div class="no-box">
+				<a class="nav-link" href="#sect-1">about</a>
+				<a class="nav-link" href="#sect-2">mission</a>
+				<a class="nav-link" href="#sect-3">video</a>
+				<a class="nav-link" href="#sect-4">apply</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="banner">
+			<h1 id="mucci-title">MUCCI MEN! INC.</h1>
+			<a class="banner-arrow" href="#sect-1">
+				<img class="arrow bounce" src="arrow.svg" height="30" width="30">
+			</a>	
+		</section>
+		<section id="sect-1">
+			<div class="no-box scroll" id="scroll-1"></div>
+			<div id="sect-1-box-1" class="box-1">
+				<h1 class="headings">WHAT'S A MUCCI???</h1>
+			</div>
+			<div id="sect-1-box-2">
+				<h2>MUCCI.</h2>
+				<p><em>adj.</em> The quality of being stingy at times, but still being considerate of others.</p>
+				<p>We've all got a little mucci in us.</p>
+			</div>
+			<figure>
+				<img id="sans" src="sans.png" alt="sans">
+			</figure>
+		</section>
+		<section id="sect-2">
+			<div class ="no-box scroll" id="scroll-2"></div>
+			<div id="sect-2-box-1" class="box-1">
+				<h1 class="headings">OUR MISSION</h1>
+			</div>
+			<div id="sect-2-box-2">
+				<p id="quote"><em>"To help our fellow man see that being a little mucci can have BIG benefits."</em></p>
+				<p id="quote-p">Being mucci is a burden to bear. We can help you carry it.</p>
+			</div>
+			<!-- QUOTE MARKS
+			<img id="quote-mark-1" src="quote.png">
+			<img id="quote-mark-2" src="quote.png"> -->
+			<figure>
+				<img id="miguel" src="miguel.png" alt="thinkers. dreamers.">
+			</figure>
+		</section>
+		<section id="sect-3">
+			<div class="no-box scroll" id="scroll-3"></div>
+			<div id="sect-3-box-1" class="box-1">
+				<h1 class="headings">[AMUSING VIDEO]</h1>
+				<h2>(We weren't sure what to put here but we hope you enjoy this)</h2>
+			</div>	
+			<div id="sect-3-box-2">
+				<iframe id="video" width="100%" height="360" src="https://www.youtube.com/embed/bD77CYdmepM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
+			</div>
+			<figure>
+				<img id="ONE" src="ONE.png" alt="what the???">
+			</figure>
+		</section>
+		<section id="sect-4">
+			<div class="no-box scroll" id="scroll-4"></div>
+			<h1 class="headings" id="sect-4-heading">JOIN THE <s>CORPSES</s> CORPS!</h1>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<label>
+					<input id="email" type="email" name="email" placeholder="placeholder@muccimail.net">
+					<p id="email-instructions"><em>Enter your email here, and through a series of complex algorithms, we will randomly handpick the winner to receive jobbership of the fellow Muccis.</em></p>
+				</label>
+				<label id="submit-it"> 
+					<input id="submit" type="submit" name="submit" value="SUBMIT">
+				</label>
+			</form>
+		</section>
+	</main>
+	<footer id="footer">
+		<div class="no-box scroll" id="scroll-5"></div>
+		<div class="no-box" id="footer-div">
+			<ul id="list">
+				<li id="mucci-copyright"><span class="footer-left">© 2019 Mucci Inc.</span></li>
+				<li><span class="footer-left">website by sean bergeron (+ friends!)</span></li>
+				<li><button id="authors-note" class="footer-right">SPECIAL AUTHOR'S NOTE</button></li>
+				<li><span class="footer-right">TERMS</span></li>
+				<li><span class="footer-right">PRIVACY</span></li>
+			</ul>
+		</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>wanted to say corps but i cant go back... the strikeout is the best i can do. <br><br>this what happens when you hit the real world, baybeh!</p>
+		</div>
+	</div>
+	<canvas></canvas>
+	</footer>
+<script src="utils.js"></script>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="scroll-to-anchor.js"></script>
+<script>
+  $(document).scrollToAnchor();
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+// get the value of the bottom of the #banner element by adding the offset of that element plus its height, set it as a variable
+var bannerbottom = $('#banner').offset().top + $('#banner').height();
+var sect1bottom = $('#sect-1').offset().top + $('#sect-1').height();
+var sect2bottom = $('#sect-2').offset().top + $('#sect-2').height();
+var sect3bottom = $('#sect-3').offset().top + $('#sect-3').height();
+// on scroll, 
+$(window).on('scroll',function(){
+    // we round here to reduce a little workload
+    var stop = Math.round($(window).scrollTop());
+    if (stop > sect3bottom-40) {
+        $('#nav-bar').addClass('sect-4-nav-color');
+    } 
+	else if (stop > sect2bottom-40) {
+		$('#nav-bar').removeClass('sect-4-nav-color');	
+        $('#nav-bar').addClass('sect-3-nav-color');	
+	}
+	else if (stop > sect1bottom-40) {
+		$('#nav-bar').removeClass('sect-4-nav-color');	
+		$('#nav-bar').removeClass('sect-3-nav-color');	
+        $('#nav-bar').addClass('sect-2-nav-color');	
+	}
+	else if (stop > bannerbottom-40) {
+		$('#nav-bar').removeClass('sect-4-nav-color');	
+		$('#nav-bar').removeClass('sect-3-nav-color');		
+		$('#nav-bar').removeClass('sect-2-nav-color');	
+        $('#nav-bar').addClass('sect-1-nav-color');			
+	}
+	else {
+        $('#nav-bar').removeClass('sect-1-nav-color');
+		$('#nav-bar').removeClass('sect-2-nav-color');
+		$('#nav-bar').removeClass('sect-3-nav-color');	
+		$('#nav-bar').removeClass('sect-4-nav-color');	
+   }
+});
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("authors-note");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
