@@ -14,8 +14,35 @@
 		
 		nav {
 			position: fixed;
-			top: 0;
+			top: 0px;
 		}
+		
+		nav ul {
+			text-align: right;
+			position: fixed;
+			width: 100%;
+			right: 0;
+			background-color: #70a058;
+			height: 30px;
+			box-shadow: 0px 0px 15px hsl(20, 0%, 5%);
+		}
+
+		nav ul li {
+			display: inline-block;
+			font-size: 20px;
+			margin: 0 3vw;
+			position: relative;
+			top: -10px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		#navbar {
+			margin: 0;
+		}		
 		
 		div {
 			text-align: center;
@@ -24,7 +51,7 @@
 			border: 10px double white;
 			border-radius: 20px;
 			margin: 0 auto;
-			box-shadow: 15px 15px hsl(20, 0%, 5%);
+			box-shadow: 15px 15px  hsl(20, 0%, 5%);
 		}
 
 		#welcome-div {
@@ -35,6 +62,8 @@
 		#projects-div {
 			width: 50vw;
 			padding: 10px 5px;
+			margin: 40vh auto;
+			margin-bottom: 50vh;
 		}				
 		
 		#welcome-section {
@@ -71,18 +100,78 @@
 			font-weight: 300;
 		}
 		
+		.project-pic {
+			width: 50%;
+			height: 50%;
+			border: solid black;
+			border-width: 4px;
+		}
+
+		.contact-pic {
+			width: 10%;
+			height: 10%;
+			margin: 40px;
+			margin-bottom: 20vh
+		}
+
+
+		.project-pic:hover {
+			transition: all .1s ease-in-out;
+			width: 55%;
+		}
+
+		.contact-pic:hover {
+			transition: all .05s ease-in-out;
+			transform: scale(1.1);
+		}
+		
+		
 		.project-title {
 			width: 50vw;
 			margin-bottom: 100px;
+		}
+		
+		a {
+			text-decoration: none;
+			color:white;
+		}
+		footer {
+			background-color: black;
+			width: 100%;
+			height: 50px;
+			color: white;
+			font-size: 20px;
+			padding: 10px;
+		}
+		
+		footer p {
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		@media(max-width: 700px) {
+			.project-pic {
+				width: 90%;
+				height: 90%;
+				border: solid black;
+				border-width: 4px;
+		}
+			.project-pic:hover {
+				width: 95%;
+			}
+			.project-title {
+				width: 87vw;
+				margin-bottom: 100px;
+			}
 		}
 	</style>
 </head>
 <body background="squire3.png">
 	<nav>
 		<ul id="navbar">
-			<li><a href="#welcome-section">abt</a></li>
-			<li><a href="#projects">wrk</a></li>
-			<li><a href="#contact">ctct</a></li>
+			<li><a href="#welcome-section">about</a></li>
+			<li><a href="#projects">work</a></li>
+			<li><a href="#contact">contact</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -97,34 +186,38 @@
 				<h1>This semester, I made some bad websites.</h1>
 				<h2>Please enjoy.</h2>
 			</div>
-			<a href="atsuki.html" target="_blank" class="project project-tile">
-				<img class="project-pic" src="" alt="project 1">
+			<a href="atsuki/atsuki.html" target="_blank" class="project project-tile">
+				<img class="project-pic" src="preview-atsuki.png" alt="project 1">
 				<div class="project-title">Tribute Page</div>
 			</a>
-			<a href="forms.html" target="_blank" class="project project-tile">
-				<img class="project-pic" src="" alt="project 2">
+			<a href="forms/forms.html" target="_blank" class="project project-tile">
+				<img class="project-pic" src="preview-forms.png" alt="project 2">
 				<div class="project-title">Forms Page</div>
 			</a>
-			<a href="project-landing.html" target="_blank" class="project project-tile">
-				<img class="project-pic" src="" alt="project 3">
+			<a href="landing/project-landing.html" target="_blank" class="project project-tile">
+				<img class="project-pic" src="preview-mucci.png" alt="project 3">
 				<div class="project-title">Product Landing</div>
 			</a>
-			<a href="tech.html" target="_blank" class="project project-tile">
-				<img class="project-pic" src="" alt="project 4">
+			<a href="tech/tech.html" target="_blank" class="project project-tile">
+				<img class="project-pic" src="preview-tech.png" alt="project 4">
 				<div class="project-title">Technical Documentation</div>
 			</a>
 			<a href="credits-page.html" target="_blank" class="project project-tile">
-				<img class="project-pic" src="" alt="project 5">
+				<img class="project-pic" src="preview-credit.png" alt="project 5">
 				<div class="project-title">Credits</div>
 			</a>
 		</section>
 		<section id="contact">
-			<div style="margin: 50px; font-size: 20px;">
-				<h1>Contact: @cashmerenoh</h1>
+			<div style="margin-top: 30vh; width: 40vw; font-size: 30px;">
+				<h1 style="font-weight: 300; margin: 10px;">Contact</h1>
 			</div>
+			<a id="profile-link" href="https://github.com/seanbff" target="_blank" class="">
+				<img class="contact-pic" src="download.png" alt="project 5">
+			</a>
 		</section>
 	</main>
 	<footer>
+	<p>website by sean bergeron. 2019.</p>
 	</footer>
 </body>
 </html>
